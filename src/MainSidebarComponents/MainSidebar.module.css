@@ -9,7 +9,7 @@
   transform: translateX(0);
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
-  padding-top: 50px; /* Space for the hamburger button */
+  padding-top: 50px; 
 }
 
 .closed {
