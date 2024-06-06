@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 On branch dev
 You have unmerged paths.
   (fix conflicts and run "git commit")
@@ -11,6 +12,8 @@ Unmerged paths:
 no changes added to commit (use "git add" and/or "git commit -a")
 PS C:\Users\Administrator\Desktop\projects\TaskUi>
 =======
+=======
+>>>>>>> 64629f779ea052e95ebe7864f6d9b64a9276f773
 # Logs
 logs
 *.log
@@ -141,4 +144,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+<<<<<<< HEAD
+>>>>>>> 64629f779ea052e95ebe7864f6d9b64a9276f773
+=======
 >>>>>>> 64629f779ea052e95ebe7864f6d9b64a9276f773
