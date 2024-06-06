@@ -1,24 +1,11 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+On branch dev
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
 
-node_modules
-dist
-dist-ssr
-*.local
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      .gitignore
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Administrator\Desktop\projects\TaskUi>
