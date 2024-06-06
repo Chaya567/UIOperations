@@ -1,0 +1,24 @@
+body, html, #root, .app {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    transition: margin-right 0.3s;
+  }
+  
+  .app.with-sidebar {
+    margin-right: 250px;
+  }
+  .hamburger {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    transition: transform 0.3s ease-in-out;
+  }
