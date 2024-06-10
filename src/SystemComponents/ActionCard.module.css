@@ -1,0 +1,41 @@
+.action-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .action-card h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .params-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .params-container div {
+    margin-bottom: 10px;
+  }
+  
+  .params-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .params-container input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .response-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

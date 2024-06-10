@@ -1,0 +1,40 @@
+[
+    {
+      "systemName": "Lego",
+      "systemDescription": "Description for Lego system",
+      "imageUrl": "path/to/lego/image",
+      "documentationUrl": "https://docs.lego.com",
+      "actions": [
+        {
+          "actionName": "Action 1",
+          "actionUrl": "https://api.lego.com/action1",
+          "actionMethod": "GET",
+          "actionBodyParams": {},
+          "actionQueryParams": {
+            "param1": "string",
+            "param2": "number"
+          }
+        }
+      ]
+    },
+    {
+      "systemName": "One Migration",
+      "systemDescription": "Description for One Migration system",
+      "imageUrl": "path/to/onemigration/image",
+      "documentationUrl": "https://docs.onemigration.com",
+      "actions": [
+        {
+          "actionName": "Action 2",
+          "actionUrl": "https://api.onemigration.com/action2",
+          "actionMethod": "POST",
+          "actionBodyParams": {
+            "param1": "string"
+          },
+          "actionQueryParams": {
+            "param2": "number"
+          }
+        }
+      ]
+    }
+  ]
+  

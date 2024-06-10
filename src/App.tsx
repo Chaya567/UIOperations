@@ -1,22 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import axios from 'axios';
 import Home from './HomeComponents/Home';
-import Lego from './Options/Lego';
-import LegoOption1 from './Options/LegoOption1';
-import LegoOption2 from './Options/LegoOption2';
-import Onemigration from './Options/Onemigration';
-import OnemigrationOption1 from './Options/OnemigrationOption1';
-import OnemigrationOption2 from './Options/OnemigrationOption2';
 import MainSidebar from './MainSidebarComponents/MainSidebar';
-import './index.css';
+import SystemCard from './SystemComponents/SystemCard';
+import './App.css';
 
 const App: React.FC = () => {
   const location = useLocation();
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [systems, setSystems] = useState<any[]>([]);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
+
+  useEffect(() => {
+    const fetchSystems = async () => {
+      const response = await axios.get('/systems.json');
+      setSystems(response.data);
+    };
+
+    fetchSystems();
+  }, []);
 
   return (
     <div className={`app ${sidebarOpen ? 'with-sidebar' : ''}`}>
@@ -26,12 +32,9 @@ const App: React.FC = () => {
       {sidebarOpen && <MainSidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/lego" element={<Lego />} />
-        <Route path="/lego/option1" element={<LegoOption1 />} />
-        <Route path="/lego/option2" element={<LegoOption2 />} />
-        <Route path="/onemigration" element={<Onemigration />} />
-        <Route path="/onemigration/option1" element={<OnemigrationOption1 />} />
-        <Route path="/onemigration/option2" element={<OnemigrationOption2 />} />
+        {systems.map((system) => (
+          <Route key={system.systemName} path={`/${system.systemName.toLowerCase()}`} element={<SystemCard system={system} />} />
+        ))}
       </Routes>
     </div>
   );

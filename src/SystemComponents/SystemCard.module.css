@@ -1,0 +1,38 @@
+.system-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .system-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .actions-container {
+    margin-top: 10px;
+  }
+  
+  .system-card h2 {
+    margin: 10px 0;
+  }
+  
+  .system-card p {
+    text-align: center;
+  }
+  
+  .system-card a {
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .system-card a:hover {
+    text-decoration: underline;
+  }
+  
